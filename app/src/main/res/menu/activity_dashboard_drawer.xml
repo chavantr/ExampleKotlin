@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_update_profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/update_profile" />
+        <item
+            android:id="@+id/nav_upload_document"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="Upload Documents" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_add_money"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Add Money" />
+
+        <item
+            android:id="@+id/nav_transfer"
+            android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+            android:title="Transfer Money" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Transaction History" />
+    </group>
+</menu>
