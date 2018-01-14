@@ -18,7 +18,7 @@ class LoginActivity : PayCompactActivity() {
 
         btnSign.setOnClickListener {
             if (getText(txtEmail).isNotEmpty() && getText(txtPassword).isNotEmpty()) {
-                startDashboard()
+                startSmsVerification()
             } else {
                 show("Enter username & password", btnSign)
             }
@@ -26,13 +26,14 @@ class LoginActivity : PayCompactActivity() {
         }
     }
 
-    private fun startDashboard() {
-        val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
-        startActivity(intent)
-    }
-
     private fun startSignUp() {
         val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
         startActivity(intent)
     }
+
+    private fun startSmsVerification() {
+        val intent = Intent(this@LoginActivity, SmsVerificationActivity::class.java)
+        startActivity(intent)
+    }
+
 }

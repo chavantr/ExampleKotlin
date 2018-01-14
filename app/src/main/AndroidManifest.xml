@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mywings.pay">
 
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -31,7 +30,9 @@
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TakeThumbActivity"></activity>
+        <activity android:name=".TakeThumbActivity" />
+        <activity android:name=".SmsVerificationActivity" />
+        <activity android:name=".ThumbVerificationActivity"></activity>
     </application>
 
 </manifest>
