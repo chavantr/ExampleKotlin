@@ -40,4 +40,8 @@
     <string name="transaction_history">Transaction History</string>
     <string name="search_on_map">Search On Map</string>
     <string name="loan">Loan</string>
+    <string name="enter_email">Enter email</string>
+    <string name="thumb">Thumb</string>
+    <string name="scan_finger_print_to_authenticate">Scan finger print to authenticate</string>
+    <string name="confirm">Confirm</string>
 </resources>
