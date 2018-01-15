@@ -1,11 +1,10 @@
 package com.mywings.pay
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_sms_verification.*
 
-class SmsVerificationActivity : AppCompatActivity() {
+class SmsVerificationActivity : PayCompactActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +13,9 @@ class SmsVerificationActivity : AppCompatActivity() {
     }
 
     private fun events() {
-        btnVerify.setOnClickListener({ startThumbVerification() })
+        btnVerify.setOnClickListener({
+            if (getText(txtEnterOTP).isNotEmpty()) startThumbVerification() else show("Enter OTP", btnVerify)
+        })
     }
 
     private fun startThumbVerification() {

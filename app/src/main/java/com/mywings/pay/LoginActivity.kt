@@ -17,7 +17,7 @@ class LoginActivity : PayCompactActivity() {
         })
 
         btnSign.setOnClickListener {
-            if (getText(txtEmail).isNotEmpty() && getText(txtPassword).isNotEmpty()) {
+            if (getText(txtEmail!!).isNotEmpty() && getText(txtPassword).isNotEmpty()) {
                 startSmsVerification()
             } else {
                 show("Enter username & password", btnSign)
