@@ -52,4 +52,23 @@
     <string name="admin">Admin</string>
     <string name="update">Update</string>
     <string name="search_file_by_name">Search file by name</string>
+    <string name="upload_file">Upload file</string>
+    <string name="upload_image">Upload Image</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyClCN7T0VPX7MIoOJEMA3W9JLXhV_S7yx4</string>
+    <string name="enter_account_number">Enter account number</string>
+
+    <string name="enter_amount">Enter amount</string>
+    <string name="send">Send</string>
+    <string name="upload_qr_image">Upload QR image</string>
+    <string name="submit">Submit</string>
+
+
+    <string-array name="loan_reasons">
+
+        <item>Education</item>
+        <item>Business</item>
+
+    </string-array>
+
 </resources>
