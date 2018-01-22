@@ -1,11 +1,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
     tools:context="com.mywings.pay.fragments.TransferMoneyFragment">
-
 
 
     <android.support.design.widget.TextInputLayout
@@ -29,6 +28,18 @@
     </android.support.design.widget.TextInputLayout>
 
 
+    <Spinner
+        android:id="@+id/spnUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilAccountNumber" />
+
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/tilAmount"
         android:layout_width="match_parent"
@@ -38,8 +49,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tilAccountNumber"
-        >
+        app:layout_constraintTop_toBottomOf="@id/spnUsers">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/txtAmount"
@@ -52,7 +62,7 @@
 
 
     <Button
-        android:id="@+id/btnAddMoney"
+        android:id="@+id/btnTransferMoney"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"

@@ -62,10 +62,26 @@
     <string name="send">Send</string>
     <string name="upload_qr_image">Upload QR image</string>
     <string name="submit">Submit</string>
+    <string name="enter_atm_location">Enter atm location</string>
+    <string name="enter_atm_address">Enter atm address</string>
+    <string name="enter_longitude">Enter longitude</string>
+    <string name="enter_latitude">Enter latitude</string>
+    <string name="add_location">Add Location</string>
+    <string name="enter_start_point">Enter start point</string>
+    <string name="enter_end_point">Enter end point</string>
+    <string name="upload">Upload</string>
+    <string name="view_requested_user">View Requested User</string>
+    <string name="send_qr_code">Send QR Code</string>
+    <string name="add_atm">Add ATM</string>
+    <string name="view_loan_requests">View Loan Requests</string>
+    <string name="view_users">View Users</string>
+
+    <string name="approve">Approve</string>
 
 
     <string-array name="loan_reasons">
 
+        <item>Select</item>
         <item>Education</item>
         <item>Business</item>
 

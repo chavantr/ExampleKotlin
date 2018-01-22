@@ -72,6 +72,27 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             R.id.nav_loan -> {
                 addFragment("loan", LoanFragment())
             }
+
+            R.id.nav_user_request -> {
+                addFragment("user_request", ViewRequestFragment())
+            }
+
+            R.id.nav_send_qr_code -> {
+                addFragment("send_code", SendQrCodeFragment())
+            }
+
+            R.id.nav_add_atm -> {
+                addFragment("add_atm", AddAtmLocationFragment())
+            }
+
+            R.id.nav_view_loan_request -> {
+                addFragment("loan_request", LoanRequirementFragment())
+            }
+
+            R.id.nav_view_users -> {
+                addFragment("view_user", ViewUserInfoFragment())
+            }
+
         }
         drawer_layout.closeDrawer(GravityCompat.START)
         return true

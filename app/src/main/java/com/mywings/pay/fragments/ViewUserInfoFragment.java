@@ -1,9 +1,8 @@
 package com.mywings.pay.fragments;
 
 
-import android.app.Fragment;
 import android.os.Bundle;
-
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +10,11 @@ import android.view.ViewGroup;
 import com.mywings.pay.R;
 
 
-public class ViewUserInfoFragment extends Fragment {
+public class ViewUserInfoFragment extends BaseFragment {
 
+    private View viewUserInfo;
+
+    private RecyclerView lstUserInfo;
 
     public ViewUserInfoFragment() {
 
@@ -23,7 +25,11 @@ public class ViewUserInfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_view_user_info, container, false);
+        viewUserInfo = inflater.inflate(R.layout.fragment_view_user_info, container, false);
+
+        lstUserInfo = viewUserInfo.findViewById(R.id.lstUsers);
+
+        return viewUserInfo;
     }
 
 }

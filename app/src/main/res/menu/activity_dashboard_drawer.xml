@@ -41,5 +41,36 @@
             android:title="@string/loan" />
 
 
+        <item
+            android:id="@+id/nav_user_request"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/view_requested_user"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/nav_send_qr_code"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/send_qr_code"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_add_atm"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/add_atm"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_view_loan_request"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/view_loan_requests"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_view_users"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/view_users"
+            android:visible="false" />
+
     </group>
 </menu>

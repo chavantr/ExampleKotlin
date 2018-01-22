@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import com.mywings.pay.R
 
 
-class SearchOnMapFragment : Fragment() {
+class SearchOnMapFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
