@@ -78,6 +78,8 @@
 
     <string name="approve">Approve</string>
     <string name="reject">Reject</string>
+    <string name="amount">Amount</string>
+    <string name="sent">Sent</string>
 
 
     <string-array name="loan_reasons">

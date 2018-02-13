@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.mywings.pay.R;
+import com.mywings.pay.models.TransferMoneyTransaction;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class AddAtmLocationFragment extends BaseFragment {
@@ -21,8 +25,14 @@ public class AddAtmLocationFragment extends BaseFragment {
     private EditText txtLatitude;
     private Button btnSave;
 
+    private List<TransferMoneyTransaction> tra;
+
 
     public AddAtmLocationFragment() {
+
+        tra = new ArrayList<>();
+
+        tra.add(new TransferMoneyTransaction(1,2,3,"1234435","43545665",656.00));
 
     }
 
